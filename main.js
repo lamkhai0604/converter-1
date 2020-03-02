@@ -10,7 +10,7 @@ function vndtoUSD () {
 
 function usdtoVnd () {
     let result = amount * rate;
-    console.log("usd to vnd is", result)
+    console.log(new Intl.NumberFormat('us-us', { style: 'currency', currency: 'USD' }).format(result));
 }
 
 if (currency == "vnd"){
